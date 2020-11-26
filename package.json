@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "scripts": {
+    "bundle-dev": "parcel src/index.html",
+    "bundle-build": "parcel build src/index.html"
+  },
+  "name": "frontend-tech-test-main"
+}

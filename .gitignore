@@ -5,3 +5,9 @@ env.json
 
 # Node Modules
 node_modules
+
+# cache data
+.cache
+
+# .map files
+**/**.map
