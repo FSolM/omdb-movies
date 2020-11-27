@@ -1,1 +1,216 @@
-/* Any CSS you use to flesh out your UI can go here */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.hidden {
+  visibility: hidden;
+}
+
+@-webkit-keyframes changeColor {
+  0% {
+    color: #92d58e;
+  }
+  50% {
+    color: #85b8de;
+  }
+  100% {
+    color: #92d58e;
+  }
+}
+
+@keyframes changeColor {
+  0% {
+    color: #92d58e;
+  }
+  50% {
+    color: #85b8de;
+  }
+  100% {
+    color: #92d58e;
+  }
+}
+
+body {
+  background-color: #f3f3f3;
+  color: #353535;
+  font-family: 'Roboto', sans-serif;
+}
+
+div.container-header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #222222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 120px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.container-header > .header {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+div.container-search {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 40px;
+}
+
+div.container-search > .search-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 25px;
+  margin-bottom: 25px;
+}
+
+div.container-search > .search-bar > div {
+  height: 100%;
+  padding: 5px 15px;
+}
+
+div.container-search > .search-bar > .icon {
+  border: 1px solid #909090;
+  border-right: none;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  padding-right: 5px;
+}
+
+div.container-search > .search-bar > .icon > svg {
+  fill: #909090;
+}
+
+div.container-search > .search-bar > .input {
+  border: 1px solid #909090;
+  border-left: none;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 0;
+}
+
+div.container-search > .search-bar > .input > input {
+  border: none;
+  color: inherit;
+  height: 100%;
+  width: 100%;
+}
+
+div.container-search > .search-bar > .input > input:focus {
+  outline: none;
+}
+
+div.container-search > .button {
+  padding: 10px 0;
+}
+
+div.container-search > .button > button {
+  border: none;
+  border-radius: 25px;
+  padding: 10px 30px;
+}
+
+div.container-search > .button > button:hover {
+  background-color: #335999;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+div.container-search > .button > button:focus {
+  outline: none;
+}
+
+div.container-search > .search-misc {
+  margin: 25px 0;
+}
+
+div.container-search > .search-misc > .loading {
+  -webkit-animation: changeColor 2s infinite;
+          animation: changeColor 2s infinite;
+  font-size: 18px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.container-contents {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f3f3f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 25px 0;
+}
+
+.container-contents > .movie {
+  background-color: #ffffff;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0;
+  text-align: center;
+  padding: 25px 15px;
+  width: 550px;
+}
+
+.container-contents > .movie > .image-container > img {
+  height: 300px;
+  width: 200px;
+}
+
+.container-contents > .movie > .data-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+  text-align: right;
+  width: 65%;
+}
+
+.container-contents > .movie > .data-container > .title {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+
+.container-contents > .movie > .data-container > .year {
+  color: #909090;
+  font-size: 16px;
+  padding-bottom: 5px;
+}
+
+.container-contents > .movie > .data-container > .description {
+  font-size: 18px;
+}
+/*# sourceMappingURL=main.css.map */
