@@ -193,7 +193,7 @@ div.container-search > .search-misc > .loading {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 10px;
-  text-align: left;
+  text-align: right;
   width: 65%;
 }
 
