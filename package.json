@@ -1,10 +1,11 @@
 {
-  "devDependencies": {
-    "parcel-bundler": "^1.12.4"
-  },
   "scripts": {
     "bundle-dev": "parcel src/index.html",
-    "bundle-build": "parcel build src/index.html"
+    "bundle-build": "parcel src/build index.html"
   },
-  "name": "frontend-tech-test-main"
+  "name": "frontend-tech-test-main",
+  "devDependencies": {
+    "webpack": "^5.8.0",
+    "webpack-cli": "^4.2.0"
+  }
 }
