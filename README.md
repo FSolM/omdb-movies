@@ -1,8 +1,9 @@
-# Flow Front End Test
+# OMDB Movies
 
-## Display OMDb results
-The task here today will be to create a very simple ui to search for and render back a list of movies from the OMDB api, utilizing the fetch api, and without using inline html event handlers. We'll want to have all of the results aggregated (iterate over each paginated result set and merge into a single collection), have them sorted by release date, and then have a a poster thumb with year and title rendered for each result. We'll then want some kind of singular view for movie details for each result. This should be done without incorporating any frameworks or external libraries (you may use a different style reset/normalizer if you prefer, though one has already been included)
+## A one-paged searching web application that uses the OMDB API to fetch movies and displays them
 
-*Please do not post the provided api keys publically.*
+This is a small page that displays the available movies using the OMDB API to fetch them.
 
-You'll find in this repository an index file pointing to static a static css file and js file, but feel free to utilize any kind of local development tooling (brocolli, webpack, parcel, etc) to speed up the process.
+It uses webpack through `npm` to bundle the contents, that means that no additional installation is required, though it is recommended that `Ritwick`'s `Live Server` is used.
+
+It also uses a `json` file to store the necessary keys to access the API, without it the application won't run.
